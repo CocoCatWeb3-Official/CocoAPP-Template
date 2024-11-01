@@ -33,38 +33,6 @@
          
         </div>
       </div>
-      <div class="api-form">
-        <div class="api-col">
-           
-          <h2 class="p-title">Demo</h2>
-          <h3 class="align-left p-ititle">connectCocoPay</h3>
-
-          <div class="api-label api-label1">PARAMS</div>
-          <div class="param-body"> 
-              <div
-                class="d-in"
-                v-for="(parameter, paramIndex) in API.parameter"
-                :key="paramIndex"
-              >
-                <div class="d-label align-left">{{ parameter.label }}{{parameter.type}}</div>
-                <input v-model="parameter.value" type="text" />
-              </div>
-            </div>
-            <div class="btn-box">
-              <button class="btn-default" @click="handleConfirm">Confirm</button>
-            </div>
-        </div>
-
-        <div style="margin-top:30px">
-          <div class="api-label api-label1">RESPONSE</div>
-          <div class="response-body">
-
-             <pre class="d-result align-left">{{API.result.trimStart()}}
-              </pre>
-          </div>
-         
-        </div>
-      </div>
   </div>
 </template>
 
